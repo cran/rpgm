@@ -1,39 +1,35 @@
-\name{skewness}
-\alias{skewness}
+\name{colMaxs - rowMaxs - colMins - rowMins}
+\alias{colMaxs}
+\alias{rowMaxs}
+\alias{colMins}
+\alias{rowMins}
+
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	The Skewness of a Vector of Random Variables
+	The Maximum or Minimum of each Column or each Row of a Matrix.
 }
 \description{
-	The function computes the centred and reduced moment of order 3 of the vector \code{x}.
+	Form row and column maxs and mins for numeric arrays (or data frames).
 }
 \usage{
-skewness(x)
+colMaxs(x)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{
-	numeric, vector of independent and identical random variables
+	numeric or integer, matrix.
 }
 }
 \details{
-The function returns the value of
-	
-	\deqn{\frac{1}{n}\sum_{k=1}^{n}[(x_{i} - \mu_{x})/\sigma_{x}]^3}{(1/n)sum_{k=1}^n[(x_i-mu_x)/sigma_x]^3}
-		
+	These functions are equivalent, per example for \code{colMaxs(X)}, to \code{apply(X, 1, max)}, but are a lot faster. 		
 
 }
 \value{
-A vector of i.i.d. normal random variable.
+A numeric vector.
 }
-\references{
-https://en.wikipedia.org/wiki/Skewness
-}
+
 \author{
 Nicolas Baradel - PGM Solutions
-}
-\note{
-For the kurtosis, see the \code{kurtosis} function.
 }
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
@@ -42,7 +38,11 @@ For the kurtosis, see the \code{kurtosis} function.
 \href{http://pgm-solutions.com/packages}{http://pgm-solutions.com/packages}
 }
 \examples{
-skewness(rpgm.rnorm(10^5))
+X <- matrix(rpgm.rnorm(36), 6, 6)
+colMaxs(X)
+rowMaxs(X)
+colMins(X)
+rowMins(X)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

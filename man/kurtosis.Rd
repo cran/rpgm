@@ -1,9 +1,8 @@
 \name{kurtosis}
 \alias{kurtosis}
-\alias{C_kurtosis}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	The kurtosis of a vector of variables
+	The Kurtosis of a Vector of Random Variables
 }
 \description{
 	The function computes the centred and reduced moment of order 4 of the vector \code{x}.
