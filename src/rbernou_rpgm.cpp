@@ -33,6 +33,8 @@ void rbernou_rpgm(int N, int * vector, double p)
 }
 
 
+extern "C" 
+{
 // [[register]]
 SEXP rb(SEXP n, SEXP p)
 {
@@ -78,4 +80,5 @@ SEXP rb(SEXP n, SEXP p)
 	UNPROTECT(1);
 
 	return vector_sexp;
+}
 }

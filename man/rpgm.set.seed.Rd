@@ -1,36 +1,30 @@
-\name{colMaxs - rowMaxs - colMins - rowMins}
-\alias{colMaxs}
-\alias{rowMaxs}
-\alias{colMins}
-\alias{rowMins}
-
+\name{rpgm.set.seed}
+\alias{rpgm.set.seed}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-	The Maximum or Minimum of each Column or each Row of a Matrix.
+	Set Seed for RPGM Mersenne Twister Random Number Generator
 }
 \description{
-	For row and column maxs and mins for numeric arrays (or data frames).
+	The function fixes the seed of the random numbers generated with rpgm.
 }
 \usage{
-colMaxs(x)
+rpgm.set.seed(seed)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
-	numeric or integer, matrix.
+  \item{seed}{
+	integer, seed.
 }
 }
-\details{
-	These functions are equivalent, per example for \code{colMaxs(X)}, to \code{apply(X, 1, max)}, but are a lot faster. 		
 
-}
 \value{
-A numeric vector.
+	Return the value of the seed.
 }
 
 \author{
 Nicolas Baradel - PGM Solutions
 }
+
 
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
@@ -38,11 +32,7 @@ Nicolas Baradel - PGM Solutions
 \href{http://pgm-solutions.com/packages}{http://pgm-solutions.com/packages}
 }
 \examples{
-X <- matrix(rpgm.rnorm(36), 6, 6)
-colMaxs(X)
-rowMaxs(X)
-colMins(X)
-rowMins(X)
+rpgm.set.seed(123)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
