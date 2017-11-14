@@ -1,4 +1,4 @@
-76a2400b06a8b6e00bd3631e3f125e2e *DESCRIPTION
+8c111774685411083fbe8f5d16745e71 *DESCRIPTION
 244ac4a8397ab97a9392f182d60eb67c *NAMESPACE
 c1782f06536b50ec8dbee4d0ccb5595f *R/bound.R
 bf1f91d8a0cb9404e6bb79c6af109dea *R/jarquebera.R
@@ -44,7 +44,8 @@ d2ca17c74e48dea582b2f9b798cd5aa4 *man/rpgm.rnorm.Rd
 7203c1591567ba38b975bfd009eb6e21 *man/rpoisson.Rd
 417b6ac3fd07e2a39eb00c0be9d9f5ea *man/rvasicek.Rd
 cc6075c7b83ff393f151658de571344a *man/skewness.Rd
-7b67bf99dcd3c4f3ee42d7e1f8a0c170 *src/Makevars
+1aedf0bbf5ec889f151780cf69e3857f *src/Makevars.in
+17ebf8e18dfa8bec0a90842df9cea030 *src/Makevars.win
 33fab33d8c6222287cf8d6bec0b2d04b *src/bound.c
 03cc2bccab47172cf7fcab06d85c8635 *src/jarquebera.cpp
 4c6a446e1ca565b9d3af5e74f0b278e4 *src/mt19337.cpp
@@ -57,12 +58,13 @@ db66b5c2c2d0364612b616e310cf07c0 *src/rbrownian.cpp
 dd2abde29f56bf6a37a59e0ef30e38bf *src/rexp_rpgm.cpp
 0b57bc42bf8f2872fd874dd719cf49f4 *src/rexp_rpgm.h
 18433468f15b97e3d25f586cf8e52f93 *src/rgpd.cpp
-735c6d84aebc5f905c10e09bade8c36f *src/rnorm_mc.cpp
-e114351d717427526374f8c77642f1b5 *src/rnorm_mc.h
-9a7c0da7041d57a86f3a22d8de0dfc7d *src/rnorm_rpgm.cpp
+430bf481dde5a1d8c7f50d769d7eb6e6 *src/rnorm_mc.cpp
+acb9dabd063e39be034831bf7fe4d7b1 *src/rnorm_mc.h
+ea8fd11f8cb78ebc7012da678762fe45 *src/rnorm_rpgm.cpp
 5015e4db42a0dea6273f320b76537b2b *src/rnorm_rpgm.h
 786d2c9493b1b2163876d949e8d4af46 *src/rowMaxs.c
 c8c8aa02fdfe3b6a4c75d1f34c2ba3fc *src/rpgm_init.c
 31b92bca2affb2b75c9bb66c73231d35 *src/rpoisson.cpp
-2095b4e29e8e52cc0abc4f06c0b2f7fb *src/threads.cpp
+6a3d791381022a8203cba013e396bf91 *src/threads.cpp
+5a7c8cea9fba7d385b5a1dd0e67c2dcc *src/threads.h
 b20c20a7f2c0e408c2d556cbcb3a49b5 *src/vasicek.cpp
